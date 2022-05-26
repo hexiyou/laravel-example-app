@@ -7,6 +7,7 @@ return [
     | Replace this handler if you want to customize your websocket handler
     |--------------------------------------------------------------------------
     */
+    //onOpen 和 onClose 回调函数的 Websocket 处理程序
     'handler' => SwooleTW\Http\Websocket\SocketIO\WebsocketHandler::class,
 
     /*
@@ -15,6 +16,7 @@ return [
     | Replace it if you want to customize your websocket payload
     |--------------------------------------------------------------------------
     */
+    //默认 websocket 解析器
     'parser' => SwooleTW\Http\Websocket\SocketIO\SocketIOParser::class,
 
     /*
@@ -22,6 +24,7 @@ return [
     | Websocket route file path
     |--------------------------------------------------------------------------
     */
+    //Websocket路由文件路径
     'route_file' => base_path('routes/websocket.php'),
 
     /*
@@ -29,6 +32,7 @@ return [
     | Default middleware for on connect request
     |--------------------------------------------------------------------------
     */
+    //连接请求的默认中间件
     'middleware' => [
         // SwooleTW\Http\Websocket\Middleware\DecryptCookies::class,
         // SwooleTW\Http\Websocket\Middleware\StartSession::class,
@@ -40,6 +44,7 @@ return [
     | Websocket handler for customized onHandShake callback
     |--------------------------------------------------------------------------
     */
+    //自定义Websocket握手回调函数
     'handshake' => [
         'enabled' => false,
         'handler' => SwooleTW\Http\Websocket\HandShakeHandler::class,
@@ -50,6 +55,7 @@ return [
     | Default websocket driver
     |--------------------------------------------------------------------------
     */
+    //默认 websocket 房间驱动
     'default' => 'table',
 
     /*
@@ -57,6 +63,7 @@ return [
     | Websocket client's heartbeat interval (ms)
     |--------------------------------------------------------------------------
     */
+    //Websocket客户端的心跳间隔（ms）
     'ping_interval' => 25000,
 
     /*
@@ -64,6 +71,7 @@ return [
     | Websocket client's heartbeat interval timeout (ms)
     |--------------------------------------------------------------------------
     */
+    //Websocket客户端的心跳间隔超时（ms）
     'ping_timeout' => 60000,
 
     /*
@@ -71,6 +79,7 @@ return [
     | Room drivers mapping
     |--------------------------------------------------------------------------
     */
+    //房间驱动映射
     'drivers' => [
         'table' => SwooleTW\Http\Websocket\Rooms\TableRoom::class,
         'redis' => SwooleTW\Http\Websocket\Rooms\RedisRoom::class,
@@ -81,6 +90,7 @@ return [
     | Room drivers settings
     |--------------------------------------------------------------------------
     */
+    //房间驱动程序设置
     'settings' => [
 
         'table' => [
