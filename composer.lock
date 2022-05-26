@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e2bbadc78322d3f75c918f0e784d76ff",
+    "content-hash": "6baef0854b521522543dfcb6785b28ff",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -9302,10 +9302,9 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "swooletw/laravel-swoole": 20,
         "nwidart/laravel-modules": 20,
         "spatie/laravel-query-builder": 20,
-        "laravel/passport": 20
+        "swooletw/laravel-swoole": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,

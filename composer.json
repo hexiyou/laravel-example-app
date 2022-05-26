@@ -9,12 +9,12 @@
         "fruitcake/laravel-cors": "^2.0",
         "guzzlehttp/guzzle": "^7.0.1",
         "laravel/framework": "^8.75",
+        "laravel/passport": "^10.4",
         "laravel/sanctum": "^2.11",
         "laravel/tinker": "^2.5",
-        "swooletw/laravel-swoole":"@dev",
-        "nwidart/laravel-modules":"@dev",
-        "spatie/laravel-query-builder":"@dev",
-        "laravel/passport":"@dev"
+        "nwidart/laravel-modules": "@dev",
+        "spatie/laravel-query-builder": "@dev",
+        "swooletw/laravel-swoole": "@dev"
     },
     "require-dev": {
         "facade/ignition": "^2.5",
@@ -27,6 +27,7 @@
     "autoload": {
         "psr-4": {
             "App\\": "app/",
+            "Modules\\": "Modules/",
             "Database\\Factories\\": "database/factories/",
             "Database\\Seeders\\": "database/seeders/"
         }
