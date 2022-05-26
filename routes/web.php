@@ -32,3 +32,9 @@ Route::get('/3', function () {
 Route::get('/5', function () {
     return 'Hello World,This is Route of 5';
 });
+
+use Modules\Admin\Http\Controllers\AdminController;
+ 
+Route::prefix('admin')->group(function() {
+    Route::get('/', [AdminController::class,'index']);
+});
