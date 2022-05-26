@@ -23,6 +23,7 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        //
+        //禁用HTML实体双重编码
+        // Blade::withoutDoubleEncoding();
     }
 }
