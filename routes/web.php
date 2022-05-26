@@ -20,3 +20,15 @@ Route::get('/', function () {
 Route::get('/2', function () {
     return view('seconds',['name' => 'Samantha','users'=>[]]);
 });
+
+Route::get('/csrf', function () {
+    return view('csrf');
+});
+
+Route::get('/3', function () {
+    return 'Hello World,This is Route of 3';
+});
+
+Route::get('/5', function () {
+    return 'Hello World,This is Route of 5';
+});
