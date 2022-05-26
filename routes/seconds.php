@@ -16,6 +16,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/2', function () {
-    return view('seconds',['name' => 'Samantha']);
-});
+// Route::get('/2', function () {
+//     return view('seconds',['name' => 'Samantha']);
+// });
