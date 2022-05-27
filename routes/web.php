@@ -38,3 +38,7 @@ use Modules\Admin\Http\Controllers\AdminController;
 Route::prefix('admin')->group(function() {
     Route::get('/', [AdminController::class,'index']);
 });
+
+//绑定控制器测试
+use App\Http\Controllers\UserController;
+Route::get('/user/{id}', [UserController::class, 'show']);
